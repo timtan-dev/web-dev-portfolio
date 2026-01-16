@@ -5,24 +5,24 @@ const contactMethods = [
   {
     icon: Mail,
     label: "Email",
-    value: "hello@johndoe.dev",
-    href: "mailto:hello@johndoe.dev",
-    description: "For project inquiries and collaboration",
+    value: "timtan.dev@gmail.com",
+    href: "mailto:timtan.dev@gmail.com",
+    description: "For hiring, project inquiries and collaboration",
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "linkedin.com/in/johndoe",
-    href: "https://linkedin.com/in/johndoe",
+    value: "linkedin.com/in/timtandev",
+    href: "https://www.linkedin.com/in/timtandev/",
     description: "Connect professionally",
   },
-  {
-    icon: Calendar,
-    label: "Schedule a Call",
-    value: "Book 30 minutes",
-    href: "https://calendly.com/johndoe",
-    description: "For detailed project discussions",
-  },
+  // {
+  //   icon: Calendar,
+  //   label: "Schedule a Call",
+  //   value: "Book 30 minutes",
+  //   href: "https://calendly.com/timtan",
+  //   description: "For detailed project discussions",
+  // },
 ];
 
 export default function Contact() {
@@ -73,27 +73,26 @@ export default function Contact() {
             </h3>
             <div className="space-y-4 text-muted-foreground">
               <p className="leading-relaxed">
-                When you reach out, I aim to respond within 24-48 hours. For project 
-                inquiries, it's helpful to share:
+                When you reach out, I aim to respond within 24-48 hours. I'm currently 
+                exploring opportunities in:
               </p>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start gap-2">
                   <span className="w-1 h-1 rounded-full bg-primary mt-2" />
-                  <span>A brief description of your project or challenge</span>
+                  <span>Full-stack development roles (Java, Spring Boot, Vue.js, React)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-1 h-1 rounded-full bg-primary mt-2" />
-                  <span>Your timeline and any key constraints</span>
+                  <span>Positions involving AI integration or LLM-powered systems</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-1 h-1 rounded-full bg-primary mt-2" />
-                  <span>Whether you're looking for full development or consulting</span>
+                  <span>Developer roles in fintech or technology companies</span>
                 </li>
               </ul>
               <p className="leading-relaxed pt-2">
-                I work with startups, SMBs, and teams within larger organizations. 
-                Whether you need a complete application built or AI integrated into 
-                existing systems, I'm here to help find the right approach.
+                Whether you're hiring, looking to collaborate on a project, or want to 
+                discuss technology and development, I'm happy to connect.
               </p>
             </div>
           </div>
