@@ -5,14 +5,14 @@ const skillCategories = [
   {
     title: "Frontend",
     icon: Code2,
-    description: "Building responsive, performant interfaces with modern frameworks and design systems.",
+    description: "Building responsive, performant interfaces with modern frameworks and design principles.",
     skills: [
-      "React / Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Framer Motion",
-      "State Management (Zustand, Redux)",
-      "Testing (Vitest, Playwright)",
+      "Vue.js / React",
+      "JavaScript / TypeScript",
+      "HTML / CSS",
+      "UI/UX Principles",
+      "Component Architecture",
+      "Cross-browser Compatibility",
     ],
   },
   {
@@ -20,38 +20,39 @@ const skillCategories = [
     icon: Server,
     description: "Scalable server architecture, APIs, and data management for production systems.",
     skills: [
-      "Node.js / Express",
-      "Python / FastAPI",
-      "PostgreSQL / MongoDB",
-      "REST & GraphQL APIs",
-      "Authentication & Security",
+      "Java / Spring Boot",
+      "JUnit Testing",
+      "Python",
+      "Node.js",
+      "RESTful APIs",
       "Microservices Architecture",
+      "MySQL / PostgreSQL / Redis",
     ],
   },
   {
     title: "AI & Automation",
     icon: Brain,
-    description: "Integrating AI capabilities to enhance products and automate complex workflows.",
+    description: "Integrating AI capabilities and building evaluation frameworks for LLM-powered systems.",
     skills: [
-      "OpenAI API / GPT Integration",
-      "LangChain / LlamaIndex",
-      "Vector Databases (Pinecone)",
-      "RAG Pipelines",
-      "Custom AI Agents",
-      "Process Automation",
+      "OpenAI API / Claude API",
+      "LangChain Integration",
+      "Multi-Model LLM Integration",
+      "Statistical Analysis",
+      "Evaluation Frameworks",
+      "Streamlit Applications",
     ],
   },
   {
-    title: "Tools & Platforms",
+    title: "Tools & DevOps",
     icon: Wrench,
     description: "DevOps, cloud infrastructure, and tooling for reliable, maintainable systems.",
     skills: [
-      "AWS / Vercel / Railway",
       "Docker & Containerization",
-      "CI/CD (GitHub Actions)",
-      "Git & Version Control",
-      "Monitoring & Logging",
-      "Supabase / Firebase",
+      "CI/CD Pipelines",
+      "AWS Cloud Services",
+      "Git / GitLab",
+      "Monitoring (Grafana, Prometheus)",
+      "Maven / Gradle",
     ],
   },
 ];
@@ -108,18 +109,18 @@ export default function Skills() {
           <div className="mt-16 p-8 md:p-12 rounded-lg bg-accent/50 border border-border">
             <div className="max-w-2xl">
               <h3 className="font-heading font-medium text-xl text-foreground mb-4">
-                AI Integration as a Core Competency
+                Exploring AI-Augmented Development
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Beyond traditional development, I specialize in embedding AI capabilities 
-                into products and workflows. This includes working with large language models, 
-                building retrieval-augmented generation (RAG) systems, creating custom AI agents, 
-                and designing automation pipelines that reduce manual work.
+                Beyond traditional full-stack development, I'm actively expanding into AI 
+                integration through projects involving LLM APIs, multi-model evaluation 
+                frameworks, and workflow automation. My Master's research focused on 
+                quantitatively assessing AI reliability in design thinking applications.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Whether it's adding intelligent search to an existing platform, building a 
-                document Q&A system, or creating AI-powered customer support—I deliver 
-                solutions that are practical, scalable, and production-ready.
+                I'm particularly interested in practical applications—integrating AI into 
+                existing systems, building evaluation tools for model selection, and exploring 
+                how LLMs can augment business processes while maintaining human oversight.
               </p>
             </div>
           </div>
