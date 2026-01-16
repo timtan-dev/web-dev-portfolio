@@ -13,51 +13,26 @@ const projectDetails: Record<string, {
   liveUrl?: string;
   githubUrl?: string;
 }> = {
-  "ai-document-assistant": {
-    challenge: "A mid-sized enterprise had accumulated thousands of internal documents, FAQs, and process guides. Support staff spent hours searching for answers, leading to slow response times and inconsistent information delivery. The existing search was keyword-based and often returned irrelevant results.",
-    solution: "Built a conversational AI assistant using OpenAI's GPT-4 with a custom RAG (Retrieval-Augmented Generation) pipeline. Documents were chunked, embedded using OpenAI embeddings, and stored in Pinecone for semantic search. The frontend provided a chat interface where users could ask questions naturally and receive accurate, sourced answers.",
-    result: "Reduced average time-to-answer by 70%. Support team productivity increased significantly, and the system handled 40% of common queries without human intervention. The solution scaled to handle 500+ concurrent users.",
-    architecture: "React frontend → FastAPI backend → Pinecone vector DB → OpenAI API. Document ingestion pipeline processes PDFs and markdown files automatically.",
-    aiRelevance: "Core AI project demonstrating practical LLM integration, embedding models, vector databases, and production-ready RAG implementation.",
-    liveUrl: "https://demo.example.com",
-    githubUrl: "https://github.com/johndoe/doc-assistant",
+  "payment-gateway": {
+    challenge: "As the fintech platform expanded partnerships with multiple payment providers and banks—each with different fee rates, contract terms, and transaction limits—the business faced escalating costs and declining success rates. Manual selection of payment routes was unsustainable as user volume grew from 2.4 million to 4.5 million active users.",
+    solution: "Architected a distributed microservices system with three specialized services: (1) a routing engine that evaluates rules, filters, and priorities in real-time to select optimal payment providers, (2) a calculation service that aggregates transaction data to support routing decisions, and (3) a configuration service allowing business teams to update rules without developer intervention. Redis cached frequently-accessed rules and provider data, while MySQL persisted transaction records and configurations. RESTful APIs enabled seamless communication between services and external payment gateways.",
+    result: "Achieved 2,000+ TPS with sub-200ms latency and 99.9% uptime with zero production errors. Intelligent routing saved $45,000 AUD monthly by automatically selecting cost-effective providers while maintaining high success rates. The system scaled horizontally to support the growth from 2.4M to 4.5M active users.",
+    architecture: "Configuration Service updates rules → Redis cache. Main Routing Service queries Redis for rules → evaluates filters/priorities → calls Calculation Service API for real-time metrics → selects optimal payment provider. Calculation Service aggregates transaction data to MySQL (totals, failure rates) and exposes metrics via API.",
   },
-  "saas-analytics-dashboard": {
-    challenge: "A B2B SaaS startup lacked visibility into critical business metrics. Data was scattered across Stripe, their app database, and third-party tools. Leadership couldn't make informed decisions without manual spreadsheet compilation.",
-    solution: "Designed and built a unified analytics dashboard aggregating data from multiple sources. Implemented real-time data pipelines, custom metric calculations (MRR, churn, LTV), and interactive visualizations. Role-based access ensured appropriate data visibility across teams.",
-    result: "Leadership gained instant access to KPIs. Identified a cohort with 2x higher churn, leading to targeted retention efforts that improved overall retention by 25% within 3 months.",
-    architecture: "Next.js with server components for initial load performance. Supabase for real-time subscriptions. Edge functions for Stripe webhook processing.",
-    liveUrl: "https://demo.example.com",
+  "ai-design-thinking": {
+    challenge: "Design thinking practitioners lacked objective, quantitative methods to evaluate which AI models reliably support complex workflows like stakeholder identification and risk analysis. Existing research relied on consumer chatbots without configurability or reproducible benchmarks, making evidence-based model selection impossible.",
+    solution: "Developed an open-source evaluation framework with six quantitative metrics: Stakeholder Coverage (25% weight), Risk Coverage (30%), Coherence and Consistency (30%), Processing Speed (7.5%), and API Cost (7.5%), combined into an Overall Reliability Index. Built a configurable workflow system using LangChain to integrate multiple LLM APIs (OpenAI, Claude, Grok), allowing researchers to test models systematically. Applied the framework to the real-world Whyalla Hydrogen Project case study to generate reproducible performance comparisons.",
+    result: "Tested 4 premium LLMs and revealed Claude Sonnet 4.5 as most reliable while exposing a fundamental trade-off: high-performing models showed greater analytical depth but lower statistical consistency, requiring human oversight for reliable deployment. The framework enabled evidence-based model selection for design thinking applications.",
+    architecture: "Streamlit interface for model selection and parameter configuration → LangChain orchestration layer calls LLM APIs (OpenAI/Claude/Grok) → responses analyzed against 6 quantitative metrics → statistical scoring engine calculates weighted Overall Reliability Index → results visualized for comparison.",
+    aiRelevance: "Demonstrates systematic LLM evaluation methodology, multi-model API integration, and quantitative reliability assessment for AI-augmented workflows beyond typical chatbot applications.",
+    liveUrl: "https://design-thinking-ai-chen2106.streamlit.app",
+    githubUrl: "https://github.com/timtan-dev/design-thinking-ai",
   },
-  "automated-workflow-platform": {
-    challenge: "An operations team was manually processing data exports, transforming formats, validating entries, and routing information—consuming over 20 hours per week. Error rates were high due to repetitive manual work.",
-    solution: "Built an intelligent automation platform using LangChain for orchestration. Created specialized agents for data validation, format transformation, and routing decisions. Integrated with existing tools via APIs and webhooks.",
-    result: "Automated 95% of the workflow. Manual processing time dropped from 20+ hours to under 1 hour weekly. Error rates decreased by 85%.",
-    architecture: "Node.js orchestration layer → LangChain agents → AWS Lambda for scalable execution → MongoDB for job tracking and audit logs.",
-    aiRelevance: "Showcases AI agents for business process automation, demonstrating how LLMs can make decisions previously requiring human judgment.",
-    githubUrl: "https://github.com/johndoe/workflow-automation",
-  },
-  "e-commerce-storefront": {
-    challenge: "A growing SMB needed to move from a dated, difficult-to-update website to a modern e-commerce platform. Key requirements: mobile-first design, fast checkout, and easy product management.",
-    solution: "Built a custom React storefront with Stripe integration for payments. Supabase provided the backend for products, orders, and customer data. Implemented a headless CMS approach allowing non-technical staff to update products and content.",
-    result: "Launched within 6 weeks. Online sales increased 40% in the first quarter. Mobile conversion rate doubled compared to the previous site.",
-    architecture: "React + Tailwind for responsive UI → Supabase for data and auth → Stripe for payments → Cloudflare for edge caching.",
-    liveUrl: "https://demo.example.com",
-  },
-  "customer-support-ai": {
-    challenge: "A growing startup's support volume was increasing faster than they could hire. Response times were suffering, and the team was burning out handling repetitive queries.",
-    solution: "Developed an AI-powered support agent that could understand customer queries, search knowledge bases, and provide accurate responses. Complex issues were seamlessly escalated to human agents with full context.",
-    result: "60% of support queries resolved without human intervention. Average response time dropped from hours to seconds for common questions. Support team could focus on complex, high-value interactions.",
-    architecture: "Python backend → OpenAI for understanding and generation → PostgreSQL for conversation history → Redis for caching frequent queries.",
-    aiRelevance: "Production AI agent handling real customer interactions, demonstrating safe deployment of LLMs in customer-facing applications.",
-  },
-  "internal-knowledge-base": {
-    challenge: "New employees took months to become productive due to scattered documentation, tribal knowledge, and lack of searchable resources. Key information lived in Slack threads, Google Docs, and people's heads.",
-    solution: "Built a centralized knowledge platform with semantic search capabilities. Integrated with existing tools to automatically ingest and index content. Added AI-powered Q&A for natural language queries.",
-    result: "Onboarding time reduced by 50%. Employees reported significantly less time spent searching for information. The platform became the single source of truth for company knowledge.",
-    architecture: "Next.js app with Auth0 authentication → RAG pipeline for semantic search → Vector database for embeddings → Automated ingestion from connected tools.",
-    aiRelevance: "Combines traditional knowledge management with AI capabilities for intelligent search and retrieval.",
-    githubUrl: "https://github.com/johndoe/knowledge-base",
+  "internal-operations-dashboard": {
+    challenge: "Finance and payment operations teams managed over 10 disconnected systems, requiring manual SQL queries to extract data from billions of records, spreadsheet calculations for business metrics, and developer requests for every configuration change. This fragmented workflow caused hours of delays and prevented data-driven decision-making.",
+    solution: "Built a unified Vue.js portal that consolidated workflows through RESTful APIs connecting to both modern Spring Boot services and legacy PHP systems. Implemented optimized database queries with indexing and caching to enable fast searches across billions of records. Designed an intuitive UX with customizable filters, one-click Excel exports, and self-service configuration tools that eliminated the need for technical staff intervention.",
+    result: "Unified 10+ internal workflows into a single portal, reducing data lookup time by 60%. Operations teams gained self-service capabilities for configurations and reporting, freeing developers to focus on feature development rather than ad-hoc data requests.",
+    architecture: "Vue.js SPA communicates via RESTful APIs → Spring Boot microservices handle business logic and database operations → legacy PHP services expose existing functionality through API endpoints → both backend systems query MySQL/Redis data sources with optimized indexing and caching.",
   },
 };
 
