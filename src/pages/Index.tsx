@@ -4,14 +4,14 @@ import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/Layout";
 
 const techStack = [
+  "Java",
+  "Spring Boot",
+  "Vue.js",
   "React",
-  "TypeScript",
-  "Node.js",
+  "MySQL",
+  "Redis",
   "Python",
-  "PostgreSQL",
-  "OpenAI",
-  "LangChain",
-  "AWS",
+  "Docker",
 ];
 
 export default function Index() {
@@ -33,15 +33,16 @@ export default function Index() {
               className="text-4xl sm:text-5xl lg:text-6xl font-heading font-semibold leading-tight tracking-tight text-foreground mb-6 opacity-0 animate-fade-in"
               style={{ animationDelay: "0.2s" }}
             >
-              Full-Stack Developer Building AI-Augmented Solutions
+              Full-Stack Developer Building Scalable Web Applications
             </h1>
 
             <p 
               className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-8 max-w-2xl opacity-0 animate-fade-in"
               style={{ animationDelay: "0.3s" }}
             >
-              I help founders and teams transform ideas into production-ready applications. 
-              Specializing in modern web development with intelligent automation and AI integration.
+              2+ years building high-performance fintech systems and exploring AI integration. 
+              Master of Computer Science graduate experienced in Java Spring Boot, Vue.js, 
+              and microservices architecture.
             </p>
 
             <div 
@@ -88,11 +89,20 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-12 md:gap-8">
             <div className="space-y-3">
               <h3 className="font-heading font-medium text-foreground">
-                End-to-End Development
+                High-Performance Systems
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                From concept to deployment. Full-stack applications built with 
-                modern frameworks and best practices.
+                Built payment gateway microservices handling 2,000+ TPS with 
+                99.9% uptime. Experienced in scalable architecture and optimization.
+              </p>
+            </div>
+            <div className="space-y-3">
+              <h3 className="font-heading font-medium text-foreground">
+                Full-Stack Development
+              </h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                From backend APIs to responsive frontends. Proficient in Java 
+                Spring Boot, Vue.js, React, and modern web technologies.
               </p>
             </div>
             <div className="space-y-3">
@@ -100,17 +110,8 @@ export default function Index() {
                 AI Integration
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Embedding intelligence into workflows. LLMs, automation, and 
-                custom AI solutions that deliver real value.
-              </p>
-            </div>
-            <div className="space-y-3">
-              <h3 className="font-heading font-medium text-foreground">
-                Business-First Approach
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                Technology in service of outcomes. Solutions designed to solve 
-                problems and scale with your growth.
+                Exploring LLM-powered applications. Built evaluation frameworks 
+                for AI reliability assessment in design thinking workflows.
               </p>
             </div>
           </div>
