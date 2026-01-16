@@ -33,7 +33,7 @@ export default function Index() {
               className="text-4xl sm:text-5xl lg:text-6xl font-heading font-semibold leading-tight tracking-tight text-foreground mb-6 opacity-0 animate-fade-in"
               style={{ animationDelay: "0.2s" }}
             >
-              Building AI-ready solutions that scale your business
+              Full-Stack Developer Building AI-Augmented Solutions
             </h1>
 
             <p 

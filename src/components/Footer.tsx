@@ -8,7 +8,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} John Doe. Crafting AI-ready solutions.
+              © {new Date().getFullYear()} Timothy Tan. Crafting AI-ready solutions.
             </p>
           </div>
           

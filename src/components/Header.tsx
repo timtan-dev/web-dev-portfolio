@@ -41,7 +41,7 @@ export function Header() {
             to="/"
             className="font-heading font-semibold text-lg tracking-tight text-foreground hover:text-primary transition-colors"
           >
-            JD
+            Tan
           </Link>
 
           {/* Desktop Navigation */}
