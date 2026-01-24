@@ -8,6 +8,7 @@ const techStack = [
   "Spring Boot",
   "Vue.js",
   "React",
+  "Node.js",
   "MySQL",
   "Redis",
   "Python",
@@ -33,18 +34,15 @@ export default function Index() {
               className="text-4xl sm:text-5xl lg:text-6xl font-heading font-semibold leading-tight tracking-tight text-foreground mb-6 opacity-0 animate-fade-in"
               style={{ animationDelay: "0.2s" }}
             >
-              Full-Stack Developer Building Scalable Web Applications
+              Adelaide-Based Full-Stack Developer Building Scalable Web Applications
             </h1>
 
             <p 
               className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-8 max-w-2xl opacity-0 animate-fade-in"
               style={{ animationDelay: "0.3s" }}
             >
-              2+ years building high-performance fintech systems and exploring AI integration. 
-              Master of Computer Science graduate experienced in Java Spring Boot, Vue.js, 
-              and microservices architecture.
+              Specialized in high-performance fintech systems and AI integration. Master of Computer Science graduate from Flinders University with expertise in Java Spring Boot, React, Vue.js, and microservices architecture. Passionate about clean code, collaboration, and delivering real business value.
             </p>
-
             <div 
               className="flex flex-wrap gap-4 mb-16 opacity-0 animate-fade-in"
               style={{ animationDelay: "0.4s" }}
