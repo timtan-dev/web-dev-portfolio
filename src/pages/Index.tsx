@@ -41,7 +41,7 @@ export default function Index() {
               className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-8 max-w-2xl opacity-0 animate-fade-in"
               style={{ animationDelay: "0.3s" }}
             >
-              Specialized in high-performance fintech systems and AI integration. Master of Computer Science graduate from Flinders University with expertise in Java Spring Boot, React, Vue.js, and microservices architecture. Passionate about clean code, collaboration, and delivering real business value.
+              Specialized in scalable backend systems, full-stack development and AI integration. Master of Computer Science graduate from Flinders University with expertise in Java Spring Boot, React, Vue.js, and microservices architecture. Passionate about clean code, collaboration, and delivering real business value.
             </p>
             <div 
               className="flex flex-wrap gap-4 mb-16 opacity-0 animate-fade-in"
