@@ -34,6 +34,19 @@ const projectDetails: Record<string, {
     result: "Unified 10+ internal workflows into a single portal, reducing data lookup time by 60%. Operations teams gained self-service capabilities for configurations and reporting, freeing developers to focus on feature development rather than ad-hoc data requests.",
     architecture: "Vue.js SPA communicates via RESTful APIs → Spring Boot microservices handle business logic and database operations → legacy PHP services expose existing functionality through API endpoints → both backend systems query MySQL/Redis data sources with optimized indexing and caching.",
   },
+  "joseph-job-agent": {
+    challenge: "Applying for software roles properly takes 3-4 hours per application: searching job boards, filtering listings, reading full job descriptions, researching each company, and tailoring a pitch. That block of time rarely exists all at once, so job search stalls even when the will is there.",
+    solution: "Built a six-agent AI pipeline — a scraper, a filter, a qualifier, a company researcher, a gap analyser, and an adviser — that runs on a schedule using Claude Cowork, built on the Anthropic Agent SDK. Each morning the pipeline searches job platforms, filters out mismatched roles, reads full job descriptions for a second-pass assessment, runs structured research on each company, and scores and writes the results to a live HTML/JSON dashboard.",
+    result: "Cut manual job research from 3-4 hours per application to under 20 minutes a day. The pipeline has run in production every morning since April 2026 and is now tracking 1,400+ jobs.",
+    architecture: "Scheduled Claude Cowork pipeline → six specialised agents (Scraper, Filter, Qualifier, Researcher, Gap Analyser, Adviser) run in sequence each morning → results scored and written to a JSON store → rendered on a live HTML dashboard.",
+    githubUrl: "https://github.com/timtan-dev/joseph-job-agent",
+  },
+  "diakresto": {
+    challenge: "Small business owners across Northern Adelaide keep hearing that AI matters for their business, but most have no way to tell which parts are actually useful versus which are hype — and no in-house technical expertise to work that out themselves.",
+    solution: "Founded Diakresto in April 2026 on a simple premise: most small businesses don't need more AI, they need to know which bit fits. Every engagement starts by scoping what a non-technical owner's business actually needs — website development, a customer-facing app, or specific AI adoption — before recommending any technology. The first paid engagement was a client-facing AI and e-commerce research report.",
+    result: "Delivered a practical, commercially-grounded roadmap that translated technical options into concrete next steps a non-technical owner could act on, establishing the consultancy's approach of discernment over technology for its own sake.",
+    liveUrl: "https://diakresto.com.au",
+  },
 };
 
 export default function ProjectDetail() {
