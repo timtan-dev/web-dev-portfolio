@@ -79,15 +79,15 @@ export default function Contact() {
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start gap-2">
                   <span className="w-1 h-1 rounded-full bg-primary mt-2" />
-                  <span>Full-stack development roles (Java, Spring Boot, Vue.js, React)</span>
+                  <span>Building and shipping real systems, not just prototypes</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-1 h-1 rounded-full bg-primary mt-2" />
-                  <span>Positions involving AI integration or LLM-powered systems</span>
+                  <span>Turning AI capability into practical, measurable business value</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-1 h-1 rounded-full bg-primary mt-2" />
-                  <span>Developer roles in fintech or technology companies</span>
+                  <span>Roles where technical depth and client-facing translation both matter</span>
                 </li>
               </ul>
               <p className="leading-relaxed pt-2">

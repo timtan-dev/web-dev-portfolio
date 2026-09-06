@@ -36,6 +36,22 @@ export const projects: Project[] = [
     outcome: "Unified 10+ internal workflows into single portal, reducing data lookup time by 60%",
     category: "Full-Stack",
   },
+  {
+    id: "joseph-job-agent",
+    title: "Joseph — Job Hunting Automation Pipeline",
+    problem: "Manually tracking and researching job opportunities doesn't scale",
+    techStack: ["Claude Cowork", "Anthropic Agent SDK", "Python", "HTML/JS Dashboard", "JSON", "Telegram Bot API"],
+    outcome: "Cut job research from 3-4 hours per application to under 20 minutes a day, now tracking 1,400+ jobs and running in production every morning since April 2026",
+    category: "AI / Automation",
+  },
+  {
+    id: "diakresto",
+    title: "Diakresto — AI & Technology Consultancy",
+    problem: "Small businesses want AI adoption but don't know where to start",
+    techStack: ["Client Discovery", "AI Strategy Consulting", "Market Research", "Roadmapping", "E-commerce Advisory"],
+    outcome: "Delivered a client-facing AI and e-commerce research report as the first paid engagement, translating technical options into a practical, commercially-grounded roadmap",
+    category: "AI / Consulting",
+  },
 ];
 
 export default function Projects() {

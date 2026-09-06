@@ -1,5 +1,5 @@
 import { Layout } from "@/components/Layout";
-import { Code2, Server, Brain, Wrench } from "lucide-react";
+import { Code2, Server, Brain, Wrench, Handshake } from "lucide-react";
 
 const skillCategories = [
   {
@@ -55,6 +55,19 @@ const skillCategories = [
       "Maven / Gradle",
     ],
   },
+  {
+    title: "Consulting & Communication",
+    icon: Handshake,
+    description: "Scoping what a business actually needs and communicating it clearly to technical and non-technical stakeholders alike.",
+    skills: [
+      "Client Discovery & Requirements Gathering",
+      "Stakeholder Communication",
+      "Use-Case Roadmapping",
+      "Research-Report Delivery",
+      "AI Governance & Responsible AI Practices",
+      "Commercial / Business-Outcomes Framing",
+    ],
+  },
 ];
 
 export default function Skills() {
@@ -103,26 +116,6 @@ export default function Skills() {
                 </ul>
               </div>
             ))}
-          </div>
-
-          {/* AI Integration Callout */}
-          <div className="mt-16 p-8 md:p-12 rounded-lg bg-accent/50 border border-border">
-            <div className="max-w-2xl">
-              <h3 className="font-heading font-medium text-xl text-foreground mb-4">
-                Exploring AI-Augmented Development
-              </h3>
-              <p className="text-muted-foreground leading-relaxed mb-4">
-                Beyond traditional full-stack development, I'm actively expanding into AI 
-                integration through projects involving LLM APIs, multi-model evaluation 
-                frameworks, and workflow automation. My Master's research focused on 
-                quantitatively assessing AI reliability in design thinking applications.
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                I'm particularly interested in practical applications—integrating AI into 
-                existing systems, building evaluation tools for model selection, and exploring 
-                how LLMs can augment business processes while maintaining human oversight.
-              </p>
-            </div>
           </div>
         </div>
       </section>

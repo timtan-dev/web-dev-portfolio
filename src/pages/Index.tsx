@@ -12,6 +12,8 @@ const techStack = [
   "MySQL",
   "Redis",
   "Python",
+  "OpenAI",
+  "Anthropic",
   "Docker",
 ];
 
@@ -27,21 +29,21 @@ export default function Index() {
               style={{ animationDelay: "0.1s" }}
             >
               <Sparkles className="h-3.5 w-3.5" />
-              <span>Full-Stack Developer × AI Integration</span>
+              <span>Engineering Meets Business Discovery</span>
             </div>
 
-            <h1 
+            <h1
               className="text-4xl sm:text-5xl lg:text-6xl font-heading font-semibold leading-tight tracking-tight text-foreground mb-6 opacity-0 animate-fade-in"
               style={{ animationDelay: "0.2s" }}
             >
-              Adelaide-Based Full-Stack Developer Building Scalable Web Applications
+              I Build the Systems Businesses Actually Need
             </h1>
 
-            <p 
+            <p
               className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-8 max-w-2xl opacity-0 animate-fade-in"
               style={{ animationDelay: "0.3s" }}
             >
-              Specialized in scalable backend systems, full-stack development and AI integration. Master of Computer Science graduate from Flinders University with expertise in Java Spring Boot, React, Vue.js, and microservices architecture. Passionate about clean code, collaboration, and delivering real business value.
+              Master of Computer Science from Flinders University with ~2 years building payment microservices at a NYSE-listed fintech, now running Diakresto (AI consultancy) and Joseph (a production automation pipeline live since April 2026) — all driven by the same instinct: understand the problem before building the solution.
             </p>
             <div 
               className="flex flex-wrap gap-4 mb-16 opacity-0 animate-fade-in"
@@ -96,20 +98,20 @@ export default function Index() {
             </div>
             <div className="space-y-3">
               <h3 className="font-heading font-medium text-foreground">
-                Full-Stack Development
+                AI Consultancy
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                From backend APIs to responsive frontends. Proficient in Java 
-                Spring Boot, Vue.js, React, and modern web technologies.
+                Founded Diakresto, advising small businesses on AI adoption. First
+                paid engagement turned a vague problem into a scoped, commercial roadmap.
               </p>
             </div>
             <div className="space-y-3">
               <h3 className="font-heading font-medium text-foreground">
-                AI Integration
+                AI in Production
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Exploring LLM-powered applications. Built evaluation frameworks 
-                for AI reliability assessment in design thinking workflows.
+                Built Joseph, a production automation pipeline tracking 1,400+ jobs
+                daily since April 2026, with real cost/quality trade-off evaluation.
               </p>
             </div>
           </div>
